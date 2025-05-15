@@ -1,0 +1,154 @@
+.youreseen-container {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  background-image: url("../../assets/vector-bg.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover, cover;
+  background-position: top right, top right, center;
+  background-blend-mode: normal, normal, darken;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.suggested-service-button {
+    background: #F27B7E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;         
+    gap: 8px;                     
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "RightGrotesk", sans-serif;
+    font-weight: 100;
+    margin-bottom: 20px;
+  }
+  
+  
+.suggested-service-button:hover {
+  background-color: #5e007a;
+  transform: scale(1.05);
+}
+
+.suggested-service-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(105, 8, 150, 0.5);
+}
+
+.suggested-service-button svg {
+    font-size: 18px;          
+  }
+
+.youreseen-button {
+  border: 1px solid #5d1049;
+  color: #5d1049;
+  background: none;
+  padding: 12px 24px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.youreseen-button:hover {
+  background-color: white;
+}
+
+.youreseen-title {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  line-height: 1.4;
+  color: #5d1049 !important;
+}
+
+.youreseen-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.youreseen-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.youreseen-card:hover {
+  transform: translateY(-5px);
+}
+
+.youreseen-card-number {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid #5d1049;
+  padding: 8px 16px;
+  color: #5d1049;
+  border-radius: 50px;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.youreseen-card-title {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.youreseen-card-text {
+  font-size: 1rem;
+  color: #5d1049;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .youreseen-container {
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .youreseen-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+
+  .youreseen-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .youreseen-card-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .youreseen-card-text {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .youreseen-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

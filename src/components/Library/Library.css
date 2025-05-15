@@ -1,0 +1,73 @@
+.library-container {
+    display: flex;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  
+  .library-content {
+    flex: 1;
+    padding-left: 60px;
+  }
+  
+  .book-collection {
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  .library-h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #5a3e36;
+  }
+  
+  .library-quote {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    max-width: 500px;
+    line-height: 1.5;
+    color: #5a3e36;
+  }
+  
+  .welcome-text {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    max-width: 500px;
+    line-height: 1.5;
+    color: #5a3e36;
+  }
+  
+  @media (max-width: 768px) {
+    .library-container {
+      flex-direction: column;
+      padding: 15px;
+    }
+  
+    .library-content {
+      padding-left: 0;
+    }
+  
+    .book-collection {
+      padding-left: 0;
+      margin-top: 10px;
+    }
+  
+    .library-h1 {
+      font-size: 2rem;
+      padding-top: 40px;
+    }
+  
+    .library-quote {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .library-container {
+      padding: 20px 30px;
+    }
+  
+    .library-content {
+      margin-top: -15px;
+    }
+  }
+  

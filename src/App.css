@@ -1,0 +1,19 @@
+:root {
+  --background-color: #dfbba9;
+  --text-color: black;
+  --hover-color: #b6b9c7;
+  --primary-color: #1e3a8a;
+  --secondary-color: #1d4ed8;
+}
+
+body {
+  color: var(--text-color);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

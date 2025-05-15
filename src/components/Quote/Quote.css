@@ -1,0 +1,179 @@
+.quote-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px 5%;
+  overflow: hidden;
+}
+
+.quote-list h1 {
+  color: black !important;
+}
+
+.bigg-text {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.quote-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quote-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+
+.black-text {
+  color: black !important;
+}
+
+.quote-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+  width: 280px;
+  transition: transform 0.3s ease;
+}
+
+.black-bg {
+  background-color: black;
+  color: white;
+  border: 1px solid #333;
+}
+
+.white-bg {
+  background-color: #eff6ff;
+  color: black;
+  border: 1px solid #ddd;
+}
+
+.question-icon {
+  font-size: 22px;
+  margin-top: 5px;
+}
+
+.white-icon {
+  color: white;
+}
+
+.black-icon {
+  color: black;
+}
+
+.quote-text {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.image-box {
+  width: 45%;
+  height: 400px;
+  background: url("/your-image.jpg") no-repeat center center;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.final-text {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.title-container h1 {
+  color: black !important;
+  font-size: 2rem;
+}
+
+.clicks {
+  margin-top: 20px;
+  padding: 14px 20px;
+  font-size: 17px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.clicks:hover {
+  background-color: #520674;
+}
+
+@media (max-width: 1024px) {
+  .quote-content {
+    flex-direction: column;
+  }
+
+  .quote-list {
+    width: 100%;
+  }
+
+  .image-box {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+  }
+}
+
+.quote-box:nth-child(1) {
+  top: 5%;
+  left: 8%;
+  transform: rotate(-5deg);
+}
+.quote-box:nth-child(2) {
+  top: 20%;
+  right: 10%;
+  transform: rotate(7deg);
+}
+.quote-box:nth-child(3) {
+  top: 35%;
+  left: 25%;
+  transform: rotate(-8deg);
+}
+.quote-box:nth-child(4) {
+  top: 50%;
+  right: 18%;
+  transform: rotate(6deg);
+}
+.quote-box:nth-child(5) {
+  bottom: 15%;
+  left: 12%;
+  transform: rotate(-4deg);
+}
+.quote-box:nth-child(6) {
+  bottom: 5%;
+  right: 5%;
+  transform: rotate(5deg);
+}
+
+@media (max-width: 768px) {
+  .quote-box {
+    width: 260px;
+    position: static;
+    transform: none;
+    margin-bottom: 20px;
+  }
+
+  .quote-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+}

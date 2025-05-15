@@ -1,0 +1,102 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.auto-test {
+  background: yellow;
+}
+
+.auto-run {
+  background-color: #feff99;
+}
+
+.lc {
+  background-color: #feff99;
+}
+
+.bg-wrapper {
+  background: linear-gradient(135deg, #9b59b6, #6a4c9c);
+  color: black;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.st {
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover, cover;
+  background-position: top right, top right, center;
+  background-blend-mode: normal, normal, darken;
+  transform: translateY(-20px);
+}
+
+.new-wrapp {
+  background-color: black;
+  color: black;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.inner-wrap {
+  width: 100%;
+}
+
+.txt {
+  background: white;
+}
+
+.user {
+  background-color: white;
+}
+
+.bg-wrap {
+  background: #2b2b2b;
+  color: black;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.auto-run {
+  width: 100%;
+  min-height: auto;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .bg-wrapper,
+  .bg-wrap,
+  .inner-wrap {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .st {
+    background: none;
+  }
+}

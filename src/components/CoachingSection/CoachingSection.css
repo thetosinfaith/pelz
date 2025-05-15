@@ -1,0 +1,209 @@
+.CoachingPages-section {
+  padding: 50px 80px;
+  text-align: center;
+  background: white;
+  color: black;
+}
+
+.coaching-heading {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 25px !important;
+  text-align: left;
+}
+
+.coaching-heading span {
+  color: #F27B7E !important;
+}
+
+.inner-service {
+  font-weight: bold;
+  color: #F27B7E !important;
+}
+
+.coaching-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.coaching-description ul {
+  list-style-type: disc;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+.coaching-button {
+  margin-top: 30px;
+  background: #F27B7E;
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  padding: 14px 28px;
+  max-width: 300px;
+  box-shadow: 0px 4px 10px rgba(255, 71, 126, 0.3);
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 5%;
+}
+
+.coaching-button:hover {
+  background: #F27B7E;
+  transform: scale(1.05);
+}
+
+.coaching-description-section {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.coaching-description-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 30px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.coaching-img-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.coaching-description-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.coaching-description-content h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  -webkit-background-clip: text;
+  color: white;
+}
+
+.coaching-description-content p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.coaching-main-image {
+  max-width: 90%;
+  height: 100%;
+  object-fit: cover;
+  background: linear-gradient(135deg, #9b59b6, #6a4c9c);
+  border: 10px solid transparent;
+  border-image: linear-gradient(135deg, #9b59b6, #6a4c9c) 1;
+  background: #F27B7E;
+}
+
+@media (max-width: 1024px) {
+  .CoachingPages-section {
+    padding: 40px;
+  }
+
+  .coaching-heading {
+    font-size: 30px;
+  }
+
+  .coaching-description {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .coaching-button {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+  .coaching-description-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .coaching-description-content,
+  .coaching-description {
+    text-align: left;
+  }
+
+  .coaching-main-image {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .CoachingPages-section {
+    padding: 30px;
+  }
+
+  .coaching-heading {
+    font-size: 28px;
+  }
+
+  .coaching-description {
+    text-align: left;
+    line-height: 1.5;
+  }
+
+  .coaching-description-container {
+    text-align: left;
+  }
+
+  .coaching-main-image {
+    max-width: 92%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .CoachingPages-section {
+    padding: 0px;
+  }
+
+  .coaching-heading {
+    font-size: 26px;
+  }
+
+  .coaching-description {
+    font-size: 0.9rem !important;
+    line-height: 1.4;
+  }
+
+  .coaching-button {
+    font-size: 0.9rem !important;
+    padding: 10px 20px;
+  }
+
+  .coaching-description-content,
+  .coaching-description-container {
+    text-align: left;
+  }
+
+  .coaching-main-image {
+    max-width: 90%;
+    height: auto;
+    margin-top: 10%;
+  }
+}

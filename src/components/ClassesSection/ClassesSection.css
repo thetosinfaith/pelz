@@ -1,0 +1,109 @@
+.classes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding: 60px 20px;
+}
+
+.class-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px;
+  width: 85%;
+  max-width: 1200px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.yellow-box {
+  background: linear-gradient(to right, #ff6200, #ffb800);
+}
+
+.blue-box {
+  background-color: #ffb800;
+  color: #fffdf5;
+}
+
+.class-image {
+  width: 50%;
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+.class-box:nth-child(odd) .class-content h2 {
+  text-align: left;
+}
+
+.class-box:nth-child(even) .class-content h2 {
+  text-align: left;
+}
+
+.class-content {
+  flex: 1;
+  text-align: left;
+}
+
+.class-content h2 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.class-content p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.class-button {
+  background-color: black;
+  color: #fffdf5;
+  padding: 14px 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.class-button:hover {
+  background-color: #333;
+}
+
+@media (max-width: 900px) {
+  .class-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 30px;
+    width: 95%;
+  }
+
+  .class-image {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .class-content {
+    text-align: center;
+  }
+
+  .class-content h2 {
+    font-size: 28px;
+  }
+
+  .class-content p {
+    font-size: 16px;
+  }
+
+  .class-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}

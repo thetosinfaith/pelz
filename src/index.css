@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "RightGrotesk";
+  src: url("./fonts/RightGrotesk/RightGrotesk-WideMedium.otf");
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "RightGrotesk", sans-serif;
+}
+
+p {
+  font-family: "Fustat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+:root {
+  --primary-color: #fe8d4d;
+  --text-color: black;
+  --hover-color: #b6b9c7;
+  --background-color: #000000;
+}

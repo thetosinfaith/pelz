@@ -1,0 +1,256 @@
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  gap: 60px;
+}
+
+.faq-left {
+  max-width: 400px;
+  padding-right: 20px;
+}
+
+.faq-left h3 {
+  color: #555;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.faq-left h2 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.6;
+  margin: 0;
+  text-align: left;
+}
+
+.faq-right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-item {
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+}
+
+.faq-icon {
+  font-size: 24px;
+  font-weight: 300;
+  color: #333;
+}
+
+.faq-answer {
+  padding: 0 24px 24px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.about-me-button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.about-me-button:hover {
+  background-color: #57087a;
+  transform: scale(1.05);
+}
+
+.about-me-button:active {
+  transform: scale(0.95);
+}
+
+.testimonials-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 30px 20px;
+}
+
+.testimonials-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+}
+
+.testimonials-left h1 {
+  margin-bottom: 25px;
+  font-size: 2.5em;
+}
+
+.testimonials-left h1 span {
+  background: linear-gradient(to right, black, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  font-size: 1em;
+}
+
+.testimonials-left p {
+  font-size: 1em;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  max-width: 400px;
+  text-align: center;
+}
+
+.cta-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  gap: 8px;
+  margin: 0 auto;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+}
+
+.testimonials-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.testimonial-box {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.testimonials-img {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  min-width: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.overlay-box {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: white;
+  padding: 15px;
+  max-width: 80%;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 1em;
+}
+
+strong {
+  font-weight: bold;
+  color: black;
+  display: inline-block;
+  margin: 10px 0 5px;
+}
+
+.colored-text {
+  color: #ff6200;
+  font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  .faq-container,
+  .testimonials-container,
+  .testimonials-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .faq-left {
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+  .testimonials-left h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .testimonials-left p {
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  .testimonial-box {
+    height: 350px;
+  }
+
+  .overlay-box {
+    max-width: 68%;
+    font-size: 0.85em;
+    padding: 10px;
+    line-height: 1.4;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-container {
+    padding: 30px 15px;
+  }
+
+  .faq-left h2 {
+    font-size: 18px;
+  }
+
+  .faq-question {
+    padding: 20px;
+    font-size: 15px;
+  }
+}

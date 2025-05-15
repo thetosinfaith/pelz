@@ -1,0 +1,178 @@
+.hey-section {
+  background-image: url("../../assets/vector-bg.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover, cover;
+  background-position: top right, top right, center;
+  background-blend-mode: normal, normal, darken;
+  padding: 60px 20px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hey-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hey-slide-video {
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+}
+
+.hey-header {
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.4;
+  max-width: 550px;
+}
+
+.hey-header h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+  color: #333;
+}
+
+.hey-brand-name {
+  font-weight: 700 !important;
+  color: #F27B7E;
+}
+
+.hey-carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.hey-carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.hey-slide {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.hey-slide-content {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+}
+
+.hey-slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hey-slide-text-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffe3df;
+  padding: 15px;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.hey-slide-text-overlay p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.hey-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.hey-nav-button {
+  width: 50px;
+  height: 50px;
+  background-color: #714ea0;
+  color: white;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  border-radius: 8px;
+}
+
+.hey-nav-button:hover {
+  background-color: #008f5b;
+}
+
+.hey-cta-container {
+  display: flex;
+  justify-content: center;
+}
+
+.hey-cta-button {
+  background-color: #f27b7e;
+  border-radius: 8px;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+  border: none;
+}
+
+.hey-cta-button::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  right: -6px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #333;
+  z-index: -1;
+}
+
+.hey-cta-button:hover {
+  background-color: #ff9aab;
+}
+
+@media (min-width: 768px) {
+  .hey-header h2 {
+    font-size: 28px;
+  }
+
+  .hey-slide-text-overlay p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hey-header h2 {
+    font-size: 32px;
+  }
+
+  .hey-header {
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+}

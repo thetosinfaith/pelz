@@ -1,0 +1,251 @@
+.speaking-container {
+  background-color: black;
+  color: #eff6ff;
+  padding: 50px 0;
+}
+
+.speaking-upper {
+  padding: 60px 5%;
+  margin-left: 10%;
+  text-align: left;
+}
+
+.speaking-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 3%;
+  margin-top: -5%;
+}
+
+.speaking-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: left;
+  background: #fff;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.speaking-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.speaking-icon {
+  font-size: 32px;
+  background: linear-gradient(to bottom, yellow, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.speaking-item img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.book-button {
+  background-color: yellow;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  margin-top: 25px;
+}
+
+.book-button:hover {
+  background-color: black;
+  color: yellow;
+  transform: scale(1.05);
+}
+
+.speaking-main-title {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.speaking-box {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  color: white;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.speaking-box h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.speaking-box p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #eff6ff;
+  max-width: 500px;
+  margin: auto;
+}
+
+.speaking-text {
+  text-align: center;
+  margin: 0 auto 50px;
+  max-width: 1200px;
+  padding: 25px;
+  line-height: 1.8;
+}
+
+.speaking-text h1 {
+  font-size: 1.5rem;
+  margin-bottom: 3%;
+  font-weight: 500;
+  text-align: left;
+}
+
+.speaking-text p {
+  max-width: 850px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.speaking-text a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #ca0470;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.speaking-text a:hover {
+  text-decoration: underline;
+  color: #f24a8f;
+}
+
+.speaking-button {
+  padding: 15px 30px;
+  background: var(--accent_colour);
+  color: #eff6ff;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.speaking-button:hover {
+  transform: scale(1.05);
+  background-color: #f24a8f;
+}
+
+.speaking-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .speaking-upper {
+    margin-left: 5%;
+    padding: 50px 4%;
+  }
+
+  .speaking-list {
+    flex-direction: column;
+    align-items: center;
+    margin-top: -7%;
+  }
+
+  .speaking-grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .speaking-upper {
+    margin-left: 3%;
+  }
+
+  .speaking-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .speaking-text h1 {
+    font-size: 1.3rem;
+    margin-bottom: 5%;
+  }
+
+  .speaking-text p {
+    font-size: 16px;
+  }
+
+  .speaking-list {
+    flex-direction: column;
+    align-items: center;
+    margin-top: -7%;
+  }
+}
+
+@media (max-width: 480px) {
+  .speaking-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .speaking-text h1 {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  .speaking-list {
+    flex-direction: column;
+    align-items: center;
+    margin-top: -7%;
+  }
+
+  .speaking-text p {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .speaking-button {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+  .speaking-item h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .speaking-list {
+    flex-direction: column;
+    align-items: center;
+    margin-top: -7%;
+  }
+}

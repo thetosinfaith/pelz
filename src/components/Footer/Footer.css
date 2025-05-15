@@ -1,0 +1,145 @@
+.footer-header {
+  background: linear-gradient(135deg, #9b59b6, #6a4c9c);
+  padding: 32px 40px;
+  color: white;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-header-content {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Fustat', Courier, monospace;
+
+
+}
+
+.footer-brand-section {
+  margin-bottom: 32px;
+}
+
+.footer-logo {
+  height: 55px;
+  width: auto;
+  margin-left: -12px;
+}
+
+.footer-tagline {
+  font-size: 16px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  max-width: 400px;
+  line-height: 1.6;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.footer-social-icon {
+  color: white;
+}
+
+.footer-nav-columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.footer-column-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 26px;
+  text-align: left;
+}
+
+.footer-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-nav-link:hover {
+  text-decoration: underline;
+}
+
+.footer-brand {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.8rem;
+  border-top: 1px solid rgba(165, 198, 231, 0.2);
+  margin-top: 5%;
+  padding-top: 1.5rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer-bottom-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-bottom-links a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .footer-brand h1 {
+    font-size: 3rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-header-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-brand-section {
+    margin-bottom: 0;
+  }
+
+  .footer-nav-columns {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 64px;
+  }
+
+  .footer-logo {
+    width: auto;
+  }
+}
